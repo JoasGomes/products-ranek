@@ -5,6 +5,7 @@ import Produtos from './components/Produtos';
 import Footer from './components/Footer';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Contato from './components/Contato';
+import Produto from './components/Produto';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
         <div className="content">
           <Routes>
             <Route path="/" element={<Produtos />} />
+            <Route path="produto/:id" element={<Produto />} />
             <Route path="contato" element={<Contato />} />
           </Routes>
         </div>
